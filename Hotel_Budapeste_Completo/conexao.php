@@ -1,0 +1,22 @@
+<?php
+
+try {
+    $pdo = new PDO(
+        "mysql:host=localhost;port=3306;dbname=hotel;charset=utf8mb4",
+        "root",
+        ""
+    );
+
+    $pdo->setAttribute(
+        PDO::ATTR_ERRMODE,
+        PDO::ERRMODE_EXCEPTION
+    );
+
+    $pdo->setAttribute(
+        PDO::ATTR_EMULATE_PREPARES,
+        false
+    );
+
+} catch (PDOException $e){
+    die("Nâo foi possível conectar ao banco."); 
+}

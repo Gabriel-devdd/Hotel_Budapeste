@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #FAF6EE;
+    color: #3D1219;
+    line-height: 1.5;
+}
+
+/* Cabeçalho Vinho */
+header {
+    background-color: #46121A;
+    border-bottom: 2px solid #C8A252;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #E2C078;
+    text-align: center;
+}
+
+.logo span {
+    font-size: 13px;
+    letter-spacing: 3px;
+    display: block;
+}
+
+.logo h1 {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FAF6EE;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+nav a:hover {
+    color: #E2C078;
+}
+
+.btn-topo {
+    background-color: #C8A252;
+    color: #2B0B10;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-topo:hover {
+    background-color: #D9B668;
+    color: #2B0B10;
+}
+
+/* Seções e Textos */
+section {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 10px 0 15px;
+}
+
+.subtitulo-dourado {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #8C6D32;
+    text-transform: uppercase;
+    display: block;
+}
+
+.descricao {
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    color: #5C3A3F;
+    font-size: 15px;
+}
+
+/* Banner Inicial */
+.hero-imagem {
+    width: 100%;
+    height: 300px;
+    background-image :url('img/hotel_budapeste.png');
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #C8A252;
+    border-radius: 6px;
+    margin: 25px 0;
+}
+
+/* Blocos Escuros (Vinho) e Claros (Creme) */
+.modulo-alocacao,
+.box-login {
+    background-color: #46121A;
+    color: #FAF6EE;
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid #C8A252;
+}
+
+.modulo-alocacao h3,
+.box-login h3 {
+    color: #E2C078;
+    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.box-consulta,
+.card-claro,
+.card-depoimento {
+    background-color: #FAF6EE;
+    border: 1px solid #C8A252;
+    border-radius: 6px;
+    padding: 25px;
+}
+
+.form-grid,
+.cards-grid,
+.painel-duplo,
+.depoimentos-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+}
+
+.campo-grupo,
+.card-claro,
+.card-suite,
+.box-consulta,
+.box-login,
+.card-depoimento {
+    flex: 1;
+    min-width: 260px;
+}
+
+/* Formulários */
+label {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 12px 0 5px;
+}
+
+.box-login label,
+.modulo-alocacao label {
+    color: #E2C078;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #9E4752;
+    background-color: #7A232E;
+    color: #FAF6EE;
+    font-family: Arial, sans-serif;
+}
+
+input::placeholder {
+    color: #D8B4B8;
+}
+
+.btn-dourado {
+    background-color: #C8A252;
+    color: #2B0B10;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-dourado:hover {
+    background-color: #D9B668;
+}
+
+/* Cards de Suítes e Reservas */
+.card-suite {
+    background-color: #7A232E;
+    color: #FAF6EE;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.suite-topo {
+    height: 160px;
+    background-color: #46121A;
+    background-size: cover;
+    background-position: center;
+    padding: 12px;
+}
+
+.tag-quarto {
+    background-color: #46121A;
+    color: #E2C078;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    border: 1px solid #C8A252;
+    float: right;
+}
+
+.suite-corpo {
+    padding: 20px;
+}
+
+.suite-corpo h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.suite-corpo p {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #EAD8DA;
+    margin-bottom: 12px;
+}
+
+.suite-lista {
+    list-style: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #E2C078;
+    margin-bottom: 15px;
+}
+
+.suite-rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #9E4752;
+    padding-top: 15px;
+}
+
+.icone-circulo {
+    width: 52px;
+    height: 52px;
+    background-color: #46121A;
+    color: #E2C078;
+    border: 2px solid #C8A252;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+
+/* Mensagens de Feedback PHP e Tabelas */
+.erro,
+.sucesso {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.erro {
+    background-color: #7A232E;
+    color: #FAF6EE;
+    border: 1px solid #C8A252;
+}
+
+.sucesso {
+    background-color: #2E5A36;
+    color: #FAF6EE;
+    border: 1px solid #C8A252;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+th {
+    background-color: #46121A;
+    color: #E2C078;
+    padding: 12px;
+    border: 1px solid #C8A252;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #C8A252;
+}
+
+/* Rodapé */
+footer {
+    border-top: 1px solid #C8A252;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #5C3A3F;
+    margin-top: 30px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Grande Hotel Budapeste | Início</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>∞</span>
+            <h1>O GRANDE HOTEL<br>BUDAPESTE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="paradoxo.html">Paradoxo de Hilbert</a></li>
+                <li><a href="fotos.html">Fotos & Suítes</a></li>
+                <li><a href="historias.html">Histórias</a></li>
+                <li><a href="concierge.html">Concierge</a></li>
+                <li><a href="login.php" class="btn-topo">FAÇA LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <span class="subtitulo-dourado">Inspirado no Paradoxo de Hilbert & Estética Wes Anderson</span>
+        <h2>Vagas Infinitas para Experiências Inesquecíveis</h2>
+        <p class="descricao">
+            "Mesmo quando todos os nossos infinitos quartos estiverem ocupados, sempre remanejaremos nossos hóspedes para acolher você."
+        </p>
+
+        <div class="hero-imagem" title="Fachada do Grande Hotel Budapeste"></div>
+
+        <div class="modulo-alocacao">
+            <h3>MÓDULO DE ALOCAÇÃO DE VAGAS INFINITAS</h3>
+            <p style="font-size: 13px; color: #EAD8DA; margin-bottom: 20px;">
+                Garantia matemática de acomodação imediata em qualquer época do ano
+            </p>
+
+            <form action="fotos.html" method="GET" class="form-grid">
+                <div class="campo-grupo">
+                    <label for="unidade">Unidade / Ala</label>
+                    <select id="unidade" name="unidade">
+                        <option value="Ala Principal (Budapeste)">Ala Principal (Budapeste)</option>
+                        <option value="Ala Norte (Zubrowka)">Ala Norte (Zubrowka)</option>
+                    </select>
+                </div>
+                <div class="campo-grupo">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin" name="checkin">
+                </div>
+                <div class="campo-grupo">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout" name="checkout">
+                </div>
+                <div class="campo-grupo">
+                    <label for="hospedes">Hóspedes (n + 1)</label>
+                    <select id="hospedes" name="hospedes">
+                        <option value="2">2 Hóspedes (Quartos 2n)</option>
+                        <option value="1">1 Hóspede (Quarto n+1)</option>
+                    </select>
+                </div>
+                <div class="campo-grupo" style="justify-content: flex-end;">
+                    <button type="submit" class="btn-dourado">VER OPÇÕES</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>∞ GRAND BUDAPEST</strong></p>
+        <p>© 2026 O Grande Hotel Budapeste. Todos os direitos infinitos reservados.</p>
+        <p>PRAÇA ZUBROWKA, N° ∞</p>
+    </footer>
+</body>
+</html>
