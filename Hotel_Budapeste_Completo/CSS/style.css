@@ -29,7 +29,7 @@ header {
 }
 
 .logo span {
-    font-size: 13px;
+    font-size: 30px;
     letter-spacing: 3px;
     display: block;
 }
@@ -106,7 +106,7 @@ h2 {
 .hero-imagem {
     width: 100%;
     height: 300px;
-    background-image :url('img/hotel_budapeste.png');
+    background-image: url('./imagens/hotel_budapeste.png');
     background-size: cover;
     background-position: center;
     border: 2px solid #C8A252;
@@ -150,6 +150,36 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     text-align: left;
+}
+
+.cards-grid1{
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 700px;
+}
+
+.cards-grid2{
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 350px;
+}
+
+.cards-grid3{
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 700px;
 }
 
 .campo-grupo,
@@ -203,7 +233,7 @@ input::placeholder {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 35px;
 }
 
 .btn-dourado:hover {
@@ -223,7 +253,7 @@ input::placeholder {
 
 .suite-topo {
     height: 160px;
-    background-color: #46121A;
+    background-image: url('./imagens/Suíte\ Royal\ Gustave.png');
     background-size: cover;
     background-position: center;
     padding: 12px;

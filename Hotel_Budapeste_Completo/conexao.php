@@ -2,7 +2,7 @@
 
 try {
     $pdo = new PDO(
-        "mysql:host=localhost;port=3306;dbname=hotel;charset=utf8mb4",
+        "mysql:host=localhost;port=3307;dbname=hotel;charset=utf8mb4",
         "root",
         ""
     );

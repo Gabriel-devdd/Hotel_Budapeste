@@ -39,7 +39,7 @@
                 Garantia matemática de acomodação imediata em qualquer época do ano
             </p>
 
-            <form action="fotos.html" method="GET" class="form-grid">
+            <form action="alocacao.php" method="POST" class="form-grid">
                 <div class="campo-grupo">
                     <label for="unidade">Unidade / Ala</label>
                     <select id="unidade" name="unidade">
@@ -49,15 +49,16 @@
                 </div>
                 <div class="campo-grupo">
                     <label for="checkin">Check-in</label>
-                    <input type="date" id="checkin" name="checkin">
+                    <input type="date" id="checkin" name="checkin" required>
                 </div>
                 <div class="campo-grupo">
                     <label for="checkout">Check-out</label>
-                    <input type="date" id="checkout" name="checkout">
+                    <input type="date" id="checkout" name="checkout" required>
                 </div>
                 <div class="campo-grupo">
                     <label for="hospedes">Hóspedes (n + 1)</label>
                     <select id="hospedes" name="hospedes">
+                        <option value="3">3 Hóspedes (Quartos 2n+1)</option>
                         <option value="2">2 Hóspedes (Quartos 2n)</option>
                         <option value="1">1 Hóspede (Quarto n+1)</option>
                     </select>
